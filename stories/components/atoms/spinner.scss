@@ -1,4 +1,4 @@
-#faceoff {
+.faceoff {
     position: fixed;
     top: 0;
     left: 0;
@@ -7,7 +7,7 @@
     z-index: 1000;
 }
 
-#preloader {
+.preloader {
     display: block;
     position: relative;
     left: 50%;
@@ -23,7 +23,7 @@
     z-index: 1001;
 }
 
-#preloader:before {
+.preloader:before {
     content: "";
     position: absolute;
     top: 5px;
@@ -37,7 +37,7 @@
     animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
 }
 
-#preloader:after {
+.preloader:after {
     content: "";
     position: absolute;
     top: 15px;
@@ -76,7 +76,7 @@
     }
 }
 
-#faceoff .preloader-section {
+.faceoff .preloader-section {
     position: fixed;
     top: 0;
     width: 100%;
