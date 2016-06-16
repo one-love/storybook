@@ -6,15 +6,13 @@ import styles from './menu-item.scss';
 
 
 function MenuItem(props) {
-  if (props === undefined) {
-    props = {
-      link: '/',
-      name: 'Item',
-    };
+  let styleName = 'item';
+  if (props.active === 'yes') {
+    styleName += '-active';
   }
   return (
-    <li className={props.className} styleName="inline">
-      <Link to={props.link}>{props.name}</Link>
+    <li styleName={styleName}>
+      <Link to={props.link ? props.link : ''}>{props.name ? props.name : 'Item'}</Link>
     </li>
   );
 };
