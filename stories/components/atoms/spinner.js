@@ -4,9 +4,9 @@ import styles from './spinner.scss';
 
 function Spinner() {
   return (
-    <div id="faceoff">
-      <div id="preloader"></div>
-      <div className="preloader-section"></div>
+    <div styleName="faceoff">
+      <div styleName="preloader"></div>
+      <div styleName="preloader-section"></div>
     </div>
   );
 }
