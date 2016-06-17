@@ -1,17 +1,14 @@
 import React from 'react';
 import CSSModules from 'react-css-modules';
 import { Link } from 'react-router';
-import Header from '../molecules/header';
-import Footer from '../atoms/footer';
+import Layout from '../organisms/layout';
 import styles from './provision.scss';
 
 
 function Provision() {
   return (
-    <div>
-      <Header provision="active" />
+    <Layout title="Provision">
       <div styleName="provision">
-        <h1>Provision</h1>
         <div>
           <div>
             <div styleName="label">
@@ -47,8 +44,7 @@ function Provision() {
           </div>
         </div>
       </div>
-      <Footer />
-    </div>
+    </Layout>
   );
 }
 
