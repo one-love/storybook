@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/one-love/storybook.png?label=ready&title=Ready)](https://waffle.io/one-love/storybook)
 Storybook
 =========
 To run storybook, you need setup described in [Quick Start](https://github.com/one-love/one-love/blob/master/doc/quick-start.md).
