@@ -1,16 +1,13 @@
 import React from 'react';
 import CSSModules from 'react-css-modules';
-import Header from '../molecules/header';
-import Footer from '../atoms/footer';
+import Layout from '../organisms/layout';
 import styles from './service.scss';
 
 
 function Service() {
   return (
-    <div>
-      <Header service="active" />
+    <Layout title="Service">
       <div styleName="service">
-        <h1>Service</h1>
         <div styleName="item">
           <div>
             <div styleName="label">
@@ -33,8 +30,7 @@ function Service() {
           </div>
         </div>
       </div>
-      <Footer />
-    </div>
+    </Layout>
   );
 }
 

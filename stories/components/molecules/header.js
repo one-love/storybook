@@ -7,7 +7,6 @@ import styles from './header.scss';
 
 
 function Header(props) {
-  console.log(props);
   return (
     <ul className="o-layout o-list-inline" styleName="header">
       <MenuItem active={props.cluster ? 'yes' : 'no'} link="/clusters" name="Clusters" />
