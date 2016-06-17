@@ -5,7 +5,7 @@ import styles from './cluster.scss';
 
 function Cluster() {
   return (
-    <Layout>
+    <Layout cluster="active">
       <div>
         <div styleName="label">
           username:
