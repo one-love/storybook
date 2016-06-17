@@ -9,7 +9,7 @@ import styles from './layout.scss';
 function Layout(props) {
   return (
     <div>
-      <Header cluster="active"/>
+      <Header cluster={props.cluster} service={props.service} provision={props.provision}/>
       <div styleName="content">
         <h1>{props.title ? props.title : 'Title'}</h1>
         {props.children}
