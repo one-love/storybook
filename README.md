@@ -17,5 +17,5 @@ have:
 * `layouts` which contain molecules
 
 ### Stories
-All stories are in the [stories](tree/master/.stories/) directory. Inside `components` you'll find directories which follow described 
-atomic design structure. Storybook itself reads config from [.storybook](tree/master/.storybook).
+All stories are in the [stories](.stories) directory. Inside `components` you'll find directories which follow described 
+atomic design structure. Storybook itself reads config from [.storybook](.storybook).
