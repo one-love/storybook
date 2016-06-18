@@ -1,6 +1,5 @@
 import React from 'react';
-import CSSModules from 'react-css-modules';
-import { Link } from 'react-router';
+import cssModules from 'react-css-modules';
 import MenuItem from '../atoms/menu-item';
 import MenuSettings from '../atoms/menu-settings';
 import styles from './header.scss';
@@ -18,4 +17,11 @@ function Header(props) {
 }
 
 
-export default CSSModules(Header, styles);
+Header.propTypes = {
+  cluster: React.PropTypes.string,
+  service: React.PropTypes.string,
+  provision: React.PropTypes.string,
+};
+
+
+export default cssModules(Header, styles);

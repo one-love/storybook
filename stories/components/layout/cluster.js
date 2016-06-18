@@ -1,5 +1,5 @@
 import React from 'react';
-import CSSModules from 'react-css-modules';
+import cssModules from 'react-css-modules';
 import Layout from '../organisms/layout';
 import styles from './cluster.scss';
 
@@ -60,4 +60,4 @@ function Cluster() {
 }
 
 
-export default CSSModules(Cluster, styles);
+export default cssModules(Cluster, styles);

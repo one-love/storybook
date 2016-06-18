@@ -1,5 +1,5 @@
 import React from 'react';
-import CSSModules from 'react-css-modules';
+import cssModules from 'react-css-modules';
 import cloud from '../../../media/img/cloud.svg';
 import styles from './cluster.scss';
 
@@ -11,7 +11,7 @@ function Cluster(props) {
   }
   return (
     <div className="o-media" styleName="icon">
-      <img src={cloud} className="o-media__img" styleName="icon-img" />
+      <img src={cloud} alt="cluster" className="o-media__img" styleName="icon-img" />
       <div className="o-media__body">
         {name}
       </div>
@@ -20,4 +20,9 @@ function Cluster(props) {
 }
 
 
-export default CSSModules(Cluster, styles);
+Cluster.propTypes = {
+  name: React.PropTypes.string,
+};
+
+
+export default cssModules(Cluster, styles);
