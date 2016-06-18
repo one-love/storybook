@@ -3,9 +3,11 @@ import Footer from './footer';
 import MenuItem from './menu-item';
 import MenuSettings from './menu-settings';
 import Spinner from './spinner.js';
+import Log from './log.js';
 
 storiesOf('Atoms', module)
   .add('footer', Footer)
   .add('spinner', Spinner)
+  .add('log', Log)
   .add('menu-item', MenuItem)
   .add('menu-settings', MenuSettings);
