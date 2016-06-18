@@ -2,6 +2,7 @@ import React from 'react';
 import cssModules from 'react-css-modules';
 import cloud from '../../../media/img/cloud.svg';
 import styles from './cluster.scss';
+import Icon from '../atoms/icon';
 
 
 function Cluster(props) {
@@ -10,12 +11,7 @@ function Cluster(props) {
     name = props.name;
   }
   return (
-    <div className="o-media" styleName="icon">
-      <img src={cloud} alt="cluster" className="o-media__img" styleName="icon-img" />
-      <div className="o-media__body">
-        {name}
-      </div>
-    </div>
+    <Icon alt="cluster" img={cloud} name={name} />
   );
 }
 
