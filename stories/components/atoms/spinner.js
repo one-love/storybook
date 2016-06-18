@@ -1,5 +1,5 @@
 import React from 'react';
-import CSSModule from 'react-css-modules';
+import cssModule from 'react-css-modules';
 import styles from './spinner.scss';
 
 function Spinner() {
@@ -12,4 +12,4 @@ function Spinner() {
 }
 
 
-export default CSSModule(Spinner, styles);
+export default cssModule(Spinner, styles);

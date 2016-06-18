@@ -1,4 +1,3 @@
-import React from 'react';
 import { storiesOf } from '@kadira/storybook';
 import Cluster from './cluster';
 import ClusterList from './cluster-list';

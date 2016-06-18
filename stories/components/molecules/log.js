@@ -1,5 +1,5 @@
 import React from 'react';
-import CSSModules from 'react-css-modules';
+import cssModules from 'react-css-modules';
 import styles from './log.scss';
 
 function Log() {
@@ -17,4 +17,4 @@ function Log() {
 }
 
 
-export default CSSModules(Log, styles);
+export default cssModules(Log, styles);

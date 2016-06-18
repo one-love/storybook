@@ -1,7 +1,7 @@
 import React from 'react';
-import CSSModules from 'react-css-modules';
-import { Link } from 'react-router';
+import cssModules from 'react-css-modules';
 import styles from './login.scss';
+
 
 function Login() {
   return (
@@ -36,4 +36,4 @@ function Login() {
 }
 
 
-export default CSSModules(Login, styles);
+export default cssModules(Login, styles);

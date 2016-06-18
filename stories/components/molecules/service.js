@@ -1,7 +1,8 @@
 import React from 'react';
-import CSSModules from 'react-css-modules';
+import cssModules from 'react-css-modules';
 import service from '../../../media/img/service.svg';
 import styles from './service.scss';
+
 
 function Service(props) {
   let name = 'ServiceName';
@@ -10,7 +11,7 @@ function Service(props) {
   }
   return (
     <div className="o-media" styleName="icon">
-      <img src={service} className="o-media__img" styleName="icon-img"/>
+      <img src={service} alt="service" className="o-media__img" styleName="icon-img" />
       <div classNeme="o-media__body">
         {name}
       </div>
@@ -19,4 +20,9 @@ function Service(props) {
 }
 
 
-export default CSSModules(Service, styles);
+Service.propTypes = {
+  name: React.PropTypes.string,
+};
+
+
+export default cssModules(Service, styles);

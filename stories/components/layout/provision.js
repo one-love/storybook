@@ -1,5 +1,5 @@
 import React from 'react';
-import CSSModules from 'react-css-modules';
+import cssModules from 'react-css-modules';
 import { Link } from 'react-router';
 import Layout from '../organisms/layout';
 import styles from './provision.scss';
@@ -47,4 +47,4 @@ function Provision() {
 }
 
 
-export default CSSModules(Provision, styles);
+export default cssModules(Provision, styles);

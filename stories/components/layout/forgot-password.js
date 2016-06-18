@@ -1,6 +1,5 @@
 import React from 'react';
-import CSSModules from 'react-css-modules';
-import { Link } from 'react-router';
+import cssModules from 'react-css-modules';
 import styles from './forgot-password.scss';
 
 function ForgotPassword() {
@@ -27,4 +26,4 @@ function ForgotPassword() {
 }
 
 
-export default CSSModules(ForgotPassword, styles);
+export default cssModules(ForgotPassword, styles);

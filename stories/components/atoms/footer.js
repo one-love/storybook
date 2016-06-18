@@ -1,5 +1,5 @@
 import React from 'react';
-import CSSModules from 'react-css-modules';
+import cssModules from 'react-css-modules';
 import styles from './footer.scss';
 
 
@@ -12,4 +12,4 @@ function Footer() {
 }
 
 
-export default CSSModules(Footer, styles);
+export default cssModules(Footer, styles);

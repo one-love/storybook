@@ -1,5 +1,5 @@
 import React from 'react';
-import CSSModules from 'react-css-modules';
+import cssModules from 'react-css-modules';
 import Layout from '../organisms/layout';
 import styles from './service.scss';
 
@@ -33,4 +33,4 @@ function Service() {
 }
 
 
-export default CSSModules(Service, styles);
+export default cssModules(Service, styles);

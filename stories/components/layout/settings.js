@@ -1,8 +1,6 @@
 import React from 'react';
-import CSSModules from 'react-css-modules';
+import cssModules from 'react-css-modules';
 import { Link } from 'react-router';
-import Header from '../molecules/header';
-import Footer from '../atoms/footer';
 import Cluster from './cluster';
 import styles from './settings.scss';
 
@@ -25,4 +23,4 @@ function Settings() {
 }
 
 
-export default CSSModules(Settings, styles);
+export default cssModules(Settings, styles);
