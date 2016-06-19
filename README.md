@@ -14,8 +14,8 @@ simple, so we don't implement everything described in the mentioned book, but th
 have:
 * `atoms` which are the simplest elements, like `button` or `input`
 * `molecules` which contain atoms and some other elements, like `div` as container
-* `organisms` which contain molecules, like `Header` and `Footer` to create `Layout`
-* `layouts` which contain molecules
+* `layouts` which contain molecules, like `Header` and `Footer` to create `Layout`
+* `pages` which contain `Layout` which is filled with molecules to build pages
 
 ### Stories
 All stories are in the [stories](stories) directory. Inside `components` you'll find directories which follow described 
