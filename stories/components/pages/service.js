@@ -1,6 +1,6 @@
 import React from 'react';
 import cssModules from 'react-css-modules';
-import Layout from '../organisms/layout';
+import Layout from '../layouts/layout';
 import styles from './service.scss';
 
 

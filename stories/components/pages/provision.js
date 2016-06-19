@@ -1,7 +1,7 @@
 import React from 'react';
 import cssModules from 'react-css-modules';
-import Layout from '../organisms/layout';
 import Provision from '../molecules/provision';
+import Layout from '../layouts/layout';
 import styles from './provision.scss';
 
 

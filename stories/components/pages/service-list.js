@@ -1,6 +1,6 @@
 import React from 'react';
-import Layout from '../organisms/layout';
 import Service from '../molecules/service';
+import Layout from '../layouts/layout';
 
 
 export default function ServiceList() {

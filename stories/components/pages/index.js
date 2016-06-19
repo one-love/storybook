@@ -9,7 +9,7 @@ import Login from './login';
 import ForgotPassword from './forgot-password';
 import Profile from './profile';
 
-storiesOf('Layout', module)
+storiesOf('Pages', module)
   .add('login', Login)
   .add('forgot-password', ForgotPassword)
   .add('cluster', Cluster)
