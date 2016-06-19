@@ -7,7 +7,7 @@ function Login() {
   return (
     <div styleName="login">
       <div className="o-layout o-layout--center">
-        <h1>Login</h1>
+        <h1 styleName="centered">Login</h1>
       </div>
       <form role="form">
         <div styleName="position--relative">
