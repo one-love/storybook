@@ -1,6 +1,6 @@
 import React from 'react';
 import Cluster from '../molecules/cluster';
-import Layout from '../organisms/layout';
+import Layout from '../layouts/layout';
 
 
 export default function ClusterList() {
