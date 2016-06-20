@@ -9,7 +9,7 @@
   padding-top: $login_padding_top;
   font-style: italic;
 
-  input {
+  .input {
     margin: 1.5rem 0;
     font-size: 1.8rem;
     background: #fff;
@@ -28,7 +28,7 @@
     }
   }
 
-  label {
+  .label {
     position: absolute;
     left: 0;
     top: 50%;

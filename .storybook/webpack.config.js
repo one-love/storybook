@@ -7,10 +7,8 @@ module.exports = {
         test: /\.scss$/,
         loaders: [
           'style?sourceMap',
-          'css?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]',
-          'resolve-url',
+          'css?sourceMap',
           'sass?sourceMap',
-          'sass-resources',
         ],
       },
       {
@@ -23,10 +21,6 @@ module.exports = {
     ],
   },
   sassLoader: {
-    includePaths: [path.resolve(__dirname, '../src/sass')],
+    includePaths: [path.resolve(__dirname, '../node_modules')],
   },
-  sassResources: [
-    './stories/vars.scss',
-    './stories/screen.scss',
-  ],
 };

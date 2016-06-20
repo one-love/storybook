@@ -1,8 +1,7 @@
 import React from 'react';
-import cssModules from 'react-css-modules';
-import styles from './log.scss';
 
-function Log() {
+
+export default function Log() {
   return (
     <div styleName="provisions">
       <div styleName="ok">[192.168.33.34] setup </div>
@@ -15,6 +14,3 @@ function Log() {
     </div>
   );
 }
-
-
-export default cssModules(Log, styles);
