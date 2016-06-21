@@ -1,26 +1,25 @@
 import React from 'react';
-import cssModules from 'react-css-modules';
-import styles from './login.scss';
 
 
-function Login() {
+export default function Login() {
   return (
-    <div styleName="login">
+    <div className="login">
       <div className="o-layout o-layout--center">
-        <h1 styleName="centered">Login</h1>
+        <h1>Login</h1>
       </div>
       <form role="form">
-        <div styleName="position--relative">
+        <div className="position--relative">
           <input
             name="email"
             type="input"
             id="email"
+            className="input"
             autoFocus
             required
           />
-          <label htmlFor="email">Email</label>
+          <label className="label" htmlFor="email">Email</label>
         </div>
-        <div styleName="position--relative">
+        <div className="position--relative">
           <input
             type="password"
             name="password"
@@ -29,11 +28,8 @@ function Login() {
           />
           <label htmlFor="password">Password</label>
         </div>
-        <button styleName="button">Login</button>
+        <button className="button">Login</button>
       </form>
     </div>
   );
 }
-
-
-export default cssModules(Login, styles);

@@ -1,18 +1,16 @@
 import React from 'react';
-import cssModules from 'react-css-modules';
 import { Link } from 'react-router';
 import Cluster from './cluster';
-import styles from './settings.scss';
 
 
-function Settings() {
+export default function Settings() {
   return (
     <div>
-      <div styleName="settings">
-        <div styleName="disable">
+      <div className="settings">
+        <div className="disable">
           <Link to="/settings/disable">x</Link>
         </div>
-        <div styleName="items">
+        <div className="items">
           <Link to="/settings/profile">Profile</Link>
           <Link to="/settings/logout">Logout</Link>
         </div>
@@ -21,6 +19,3 @@ function Settings() {
     </div>
   );
 }
-
-
-export default cssModules(Settings, styles);

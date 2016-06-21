@@ -1,4 +1,5 @@
 import { configure } from '@kadira/storybook';
+import style from '../stories/sass/screen.scss';
 
 function loadStories() {
   require('../stories/components/atoms');

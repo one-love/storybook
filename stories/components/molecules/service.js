@@ -1,11 +1,9 @@
 import React from 'react';
-import cssModules from 'react-css-modules';
 import service from '../../../media/img/service.svg';
-import styles from './service.scss';
 import Icon from '../atoms/icon';
 
 
-function Service(props) {
+export default function Service(props) {
   let name = 'ServiceName';
   if (props && props.name) {
     name = props.name;
@@ -19,6 +17,3 @@ function Service(props) {
 Service.propTypes = {
   name: React.PropTypes.string,
 };
-
-
-export default cssModules(Service, styles);
