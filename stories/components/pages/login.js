@@ -24,9 +24,10 @@ export default function Login() {
             type="password"
             name="password"
             id="password"
+            className="input"
             required
           />
-          <label htmlFor="password">Password</label>
+          <label className="label" htmlFor="password">Password</label>
         </div>
         <button className="button">Login</button>
       </form>
