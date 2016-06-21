@@ -5,7 +5,7 @@ import Log from '../atoms/log';
 
 export default function Provision() {
   return (
-    <div>
+    <div className="provision">
       <div>
         <div className="label">
           status:
