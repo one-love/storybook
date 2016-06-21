@@ -112,27 +112,27 @@
 //++
 
 // Atoms
-@import "footer";
-@import "icon";
-@import "log";
-@import "menu-item";
-@import "menu-settings";
-@import "spinner";
+@import "atoms/_footer.scss";
+@import "atoms/_icon.scss";
+@import "atoms/_log.scss";
+@import "atoms/_menu-item.scss";
+@import "atoms/_menu-settings.scss";
+@import "atoms/_spinner.scss";
 
 // Molecules
-@import "header";
-@import "provision";
+@import "molecules/_header.scss";
+@import "molecules/_provision.scss";
 
 // Layouts
-@import "layout";
+@import "layouts/_layout.scss";
 
 // Pages
-@import "cluster-page";
-@import "forgot-password";
-@import "login";
-@import "profile";
-@import "service-page";
-@import "settings";
+@import "pages/_cluster-page.scss";
+@import "pages/_forgot-password.scss";
+@import "pages/_login.scss";
+@import "pages/_profile.scss";
+@import "pages/_service-page.scss";
+@import "pages/_settings.scss";
 
 
 /*------------------------------------*\
