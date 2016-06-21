@@ -6,11 +6,11 @@ import Cluster from './cluster';
 export default function Settings() {
   return (
     <div>
-      <div styleName="settings">
-        <div styleName="disable">
+      <div className="settings">
+        <div className="disable">
           <Link to="/settings/disable">x</Link>
         </div>
-        <div styleName="items">
+        <div className="items">
           <Link to="/settings/profile">Profile</Link>
           <Link to="/settings/logout">Logout</Link>
         </div>

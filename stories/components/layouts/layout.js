@@ -3,7 +3,7 @@ import Header from '../molecules/header';
 import Footer from '../atoms/footer';
 
 
-export function Layout(props) {
+export default function Layout(props) {
   return (
     <div>
       <Header cluster={props.cluster} service={props.service} provision={props.provision} />

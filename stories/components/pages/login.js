@@ -5,7 +5,7 @@ export default function Login() {
   return (
     <div className="login">
       <div className="o-layout o-layout--center">
-        <h1 className="o-layout__item">Login</h1>
+        <h1>Login</h1>
       </div>
       <form role="form">
         <div className="position--relative">
