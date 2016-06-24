@@ -1,7 +1,6 @@
-.settings {
+.popup {
   height: $settings_height;
   background-color: $settings_background_color;
-  transition: width 0.3s ease-in-out;
   box-shadow: 0px 2px 3px #eeeeee;
   border-style: none none none solid;
   border-width: 1px;
@@ -10,22 +9,24 @@
   right: 0;
   color: $settings_color;
   width: $settings_width;
+  padding: 10px;
+  overflow: auto;
+
+  .disable {
+    text-align: right;
+    cursor: pointer;
+  }
+}
+
+.popup__full {
+  @extend .popup;
+  width: 100%;
 }
 
 
-.disable {
-  position: relative;
-  left: 10px;
-  cursor: pointer;
-}
-
-.items {
-  padding-top: $header_height;
-  padding-left: 5px;
-}
-
-.items a {
-  display: block;
-  color: $color;
-
+.popup-appear {
+  width: 0;
+  overflow: hidden;
+  padding: 0;
+  border-style: none;
 }

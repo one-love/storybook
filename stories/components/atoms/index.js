@@ -6,6 +6,7 @@ import MenuItem from './menu-item';
 import MenuSettings from './menu-settings';
 import Spinner from './spinner.js';
 import Log from './log.js';
+import Popup from './popup.js';
 
 storiesOf('Atoms', module)
   .add('footer', () => (
@@ -25,4 +26,8 @@ storiesOf('Atoms', module)
   ))
   .add('spinner', () => (
     <Spinner />
-  ));
+  ))
+  .add('popup', () => (
+    <Popup />
+  ))
+;
