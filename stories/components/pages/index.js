@@ -5,10 +5,9 @@ import ClusterList from './cluster-list';
 import Service from './service';
 import ServiceList from './service-list';
 import Provision from './provision';
-import Settings from './settings';
 import Login from './login';
 import ForgotPassword from './forgot-password';
-import Profile from './profile';
+
 
 storiesOf('Pages', module)
   .add('login', () => (
@@ -23,9 +22,6 @@ storiesOf('Pages', module)
   .add('cluster-list', () => (
     <ClusterList />
   ))
-  .add('settings', () => (
-    <Settings />
-  ))
   .add('service', () => (
     <Service />
   ))
@@ -34,8 +30,5 @@ storiesOf('Pages', module)
   ))
   .add('provision', () => (
     <Provision />
-  ))
-  .add('profile', () => (
-    <Profile />
   ))
 ;
