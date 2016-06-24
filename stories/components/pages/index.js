@@ -1,3 +1,4 @@
+import React from 'react';
 import { storiesOf } from '@kadira/storybook';
 import Cluster from './cluster';
 import ClusterList from './cluster-list';
@@ -10,12 +11,31 @@ import ForgotPassword from './forgot-password';
 import Profile from './profile';
 
 storiesOf('Pages', module)
-  .add('login', Login)
-  .add('forgot-password', ForgotPassword)
-  .add('cluster', Cluster)
-  .add('cluster-list', ClusterList)
-  .add('settings', Settings)
-  .add('service', Service)
-  .add('service-list', ServiceList)
-  .add('provision', Provision)
-  .add('profile', Profile);
+  .add('login', () => (
+    <Login />
+  ))
+  .add('forgot-password', () => (
+    <ForgotPassword />
+  ))
+  .add('cluster', () => (
+    <Cluster />
+  ))
+  .add('cluster-list', () => (
+    <ClusterList />
+  ))
+  .add('settings', () => (
+    <Settings />
+  ))
+  .add('service', () => (
+    <Service />
+  ))
+  .add('service-list', () => (
+    <ServiceList />
+  ))
+  .add('provision', () => (
+    <Provision />
+  ))
+  .add('profile', () => (
+    <Profile />
+  ))
+;
