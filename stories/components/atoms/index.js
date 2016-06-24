@@ -1,3 +1,4 @@
+import React from 'react';
 import { storiesOf } from '@kadira/storybook';
 import Footer from './footer';
 import Icon from './icon';
@@ -7,9 +8,21 @@ import Spinner from './spinner.js';
 import Log from './log.js';
 
 storiesOf('Atoms', module)
-  .add('footer', Footer)
-  .add('icon', Icon)
-  .add('log', Log)
-  .add('menu-item', MenuItem)
-  .add('menu-settings', MenuSettings)
-  .add('spinner', Spinner);
+  .add('footer', () => (
+    <Footer />
+  ))
+  .add('icon', () => (
+    <Icon />
+  ))
+  .add('log', () => (
+    <Log />
+  ))
+  .add('menu-item', () => (
+    <MenuItem />
+  ))
+  .add('menu-settings', () => (
+    <MenuSettings />
+  ))
+  .add('spinner', () => (
+    <Spinner />
+  ));
