@@ -1,7 +1,7 @@
 import React from 'react';
-import Cluster from '../molecules/cluster';
-import Layout from '../layouts/layout';
-import Add from '../atoms/add';
+import Cluster from '../../molecules/cluster';
+import Layout from '../../layouts/layout';
+import Add from '../../atoms/add';
 
 
 export default function ClusterList() {

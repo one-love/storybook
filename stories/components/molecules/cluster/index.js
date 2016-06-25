@@ -1,6 +1,6 @@
 import React from 'react';
-import cloud from '../../../media/img/cloud.svg';
-import Icon from '../atoms/icon';
+import cloud from './cloud.svg';
+import Icon from '../../atoms/icon';
 
 
 export default function Cluster(props) {

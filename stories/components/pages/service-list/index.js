@@ -1,7 +1,7 @@
 import React from 'react';
-import Service from '../molecules/service';
-import Layout from '../layouts/layout';
-import Add from '../atoms/add';
+import Service from '../../molecules/service';
+import Layout from '../../layouts/layout';
+import Add from '../../atoms/add';
 
 
 export default function ServiceList() {

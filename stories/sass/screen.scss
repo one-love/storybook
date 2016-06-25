@@ -112,28 +112,27 @@
 //++
 
 // Atoms
-@import "atoms/_add.scss";
-@import "atoms/_footer.scss";
-@import "atoms/_icon.scss";
-@import "atoms/_log.scss";
-@import "atoms/_menu-item.scss";
-@import "atoms/_menu-settings.scss";
-@import "atoms/_spinner.scss";
-@import "atoms/_popup.scss";
+@import "../components/atoms/add/add.scss";
+@import "../components/atoms/footer/footer.scss";
+@import "../components/atoms/icon/icon.scss";
+@import "../components/atoms/log/log.scss";
+@import "../components/atoms/menu-item/menu-item.scss";
+@import "../components/atoms/menu-settings/menu-settings.scss";
+@import "../components/atoms/spinner/spinner.scss";
+@import "../components/atoms/popup/popup.scss";
 
 // Molecules
-@import "molecules/_header.scss";
-@import "molecules/_provision.scss";
+@import "../components/molecules/header/header.scss";
+@import "../components/molecules/provision/provision.scss";
 
 // Layouts
-@import "layouts/_layout.scss";
+@import "../components/layouts/layout/layout.scss";
 
 // Pages
-@import "pages/_cluster-page.scss";
-@import "pages/_forgot-password.scss";
-@import "pages/_login.scss";
-@import "pages/_profile.scss";
-@import "pages/_service-page.scss";
+@import "../components/pages/cluster/cluster.scss";
+@import "../components/pages/forgot-password/forgot-password.scss";
+@import "../components/pages/login/login.scss";
+@import "../components/pages/service/service.scss";
 
 
 /*------------------------------------*\
