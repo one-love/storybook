@@ -8,6 +8,7 @@ import Spinner from './spinner';
 import Log from './log';
 import Popup from './popup';
 import Add from './add';
+import Notification from './notification';
 
 
 storiesOf('Atoms', module)
@@ -34,5 +35,8 @@ storiesOf('Atoms', module)
   ))
   .add('spinner', () => (
     <Spinner />
+  ))
+  .add('notification', () => (
+    <Notification />
   ))
 ;

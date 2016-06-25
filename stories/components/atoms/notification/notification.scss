@@ -1,0 +1,19 @@
+.notification {
+  position: absolute;
+  top: 0px;
+  left: calc(#{$notification_width} / 2);
+  height: $notification_height;
+  width: $notification_width;
+  color: $notification_color;
+  background-color: $notification_background_color;
+  box-shadow: 0px 3px 3px green;
+  line-height: $notification_height;
+  border-radius: 0 0 10px 10px;
+  padding: 5px;
+  font-weight: bold;
+  z-index: 5;
+
+  a {
+    color: $notification_color;
+  }
+}
