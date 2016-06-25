@@ -1,40 +1,42 @@
 import React from 'react';
+import cssModules from 'react-css-modules';
 import { Link } from 'react-router';
 import Log from '../../atoms/log';
+import styles from './provision.scss';
 
 
-export default function Provision() {
+function Provision() {
   return (
-    <div className="provision">
+    <div>
       <div>
-        <div className="label">
+        <div styleName="label">
           status:
         </div>
-        <div className="item">
+        <div styleName="item">
           RUNNING
         </div>
       </div>
       <div>
-        <div className="label">
+        <div styleName="label">
           user:
         </div>
-        <div className="item">
+        <div styleName="item">
           admin@example.com
         </div>
       </div>
       <div>
-        <div className="label">
+        <div styleName="label">
           cluster:
         </div>
-        <div className="item">
+        <div styleName="item">
           <Link to="/cluster/id">cluster</Link>
         </div>
       </div>
       <div>
-        <div className="label">
+        <div styleName="label">
           service:
         </div>
-        <div className="item">
+        <div styleName="item">
           <Link to="/service/id">service</Link>
         </div>
       </div>
@@ -42,3 +44,6 @@ export default function Provision() {
     </div>
   );
 }
+
+
+export default cssModules(Provision, styles);

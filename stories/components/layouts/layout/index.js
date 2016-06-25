@@ -1,13 +1,15 @@
 import React from 'react';
+import cssModules from 'react-css-modules';
 import Header from '../../molecules/header';
 import Footer from '../../atoms/footer';
+import styles from './layout.scss';
 
 
-export default function Layout(props) {
+function Layout(props) {
   return (
     <div>
       <Header cluster={props.cluster} service={props.service} provision={props.provision} />
-      <div className="content">
+      <div styleName="content">
         <h1>{props.title ? props.title : 'Title'}</h1>
         {props.children}
       </div>
@@ -24,3 +26,6 @@ Layout.propTypes = {
   provision: React.PropTypes.string,
   title: React.PropTypes.string,
 };
+
+
+export default cssModules(Layout, styles);

@@ -14,6 +14,7 @@
 }
 
 .icon-img {
+  margin-top: 10px;
   height: 90px;
   width: 90px;
 }
@@ -21,5 +22,5 @@
 .icon-close {
   position: absolute;
   display: block;
-  margin-left: calc(#{$icon-width} - 1rem - 3px);
+  margin-left: calc(#{$icon-width} - 13px);
 }

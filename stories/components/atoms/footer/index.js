@@ -1,10 +1,15 @@
 import React from 'react';
+import cssModules from 'react-css-modules';
+import styles from './footer.scss';
 
 
-export default function Footer() {
+function Footer() {
   return (
-    <div className="footer">
+    <div styleName="footer">
       Made by: <a href="http://tilda.center/" target="_blank">Tilda Center</a>
     </div>
   );
 }
+
+
+export default cssModules(Footer, styles);

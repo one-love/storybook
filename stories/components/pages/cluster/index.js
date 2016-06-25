@@ -1,30 +1,32 @@
 import React from 'react';
+import cssModules from 'react-css-modules';
+import styles from './cluster.scss';
 import Layout from '../../layouts/layout';
 
-export default function Cluster() {
+function Cluster() {
   return (
     <Layout cluster="active">
       <div>
-        <div className="label">
+        <div styleName="label">
           username:
         </div>
-        <div className="item">
+        <div styleName="item">
           admin@example.com
         </div>
       </div>
       <div>
-        <div className="label">
+        <div styleName="label">
           ssh key:
         </div>
-        <div className="item">
+        <div styleName="item">
           tandara mandara
         </div>
       </div>
       <div>
-        <div className="label">
+        <div styleName="label">
           providers:
         </div>
-        <div className="item">
+        <div styleName="item">
           <select>
             <option value="cluster name">cicvara popara</option>
             <option value="something">gurabija</option>
@@ -32,10 +34,10 @@ export default function Cluster() {
         </div>
       </div>
       <div>
-        <div className="label">
+        <div styleName="label">
           roles:
         </div>
-        <div className="item">
+        <div styleName="item">
           <select>
             <option value="some">op čop</option>
             <option value="thing">antilop</option>
@@ -43,10 +45,10 @@ export default function Cluster() {
         </div>
       </div>
       <div>
-        <div className="label">
+        <div styleName="label">
           services:
         </div>
-        <div className="item">
+        <div styleName="item">
           <select>
             <option value="some">bandaranaik</option>
             <option value="thing">trokraka udica</option>
@@ -56,3 +58,6 @@ export default function Cluster() {
     </Layout>
   );
 }
+
+
+export default cssModules(Cluster, styles);

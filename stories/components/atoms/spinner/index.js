@@ -1,11 +1,16 @@
 import React from 'react';
+import cssModules from 'react-css-modules';
+import styles from './spinner.scss';
 
 
-export default function Spinner() {
+function Spinner() {
   return (
-    <div className="faceoff">
-      <div className="preloader"></div>
-      <div className="preloader-section"></div>
+    <div styleName="faceoff">
+      <div styleName="preloader"></div>
+      <div styleName="preloader-section"></div>
     </div>
   );
 }
+
+
+export default cssModules(Spinner, styles);

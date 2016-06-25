@@ -1,5 +1,7 @@
+/* eslint global-require: 0 */
 import { configure } from '@kadira/storybook';
-import style from '../stories/sass/screen.scss';
+import '../stories/sass/reset.scss';
+
 
 function loadStories() {
   require('../stories/components/atoms');

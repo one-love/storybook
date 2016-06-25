@@ -1,11 +1,16 @@
 import React from 'react';
+import cssModules from 'react-css-modules';
 import svg from './add.svg';
+import styles from './add.scss';
 
 
-export default function Add() {
+function Add() {
   return (
-    <div className="add">
+    <div styleName="add">
       <img alt="add" src={svg} />
     </div>
   );
 }
+
+
+export default cssModules(Add, styles);

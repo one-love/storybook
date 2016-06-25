@@ -1,13 +1,18 @@
 import React from 'react';
 import gear from './gear.svg';
+import cssModules from 'react-css-modules';
+import styles from './menu-settings.scss';
 
 
-export default function MenuSettings() {
+function MenuSettings() {
   return (
-    <li className="menu-settings">
+    <li styleName="menu-settings">
       <div>
         <img alt="menu-settings" src={gear} />
       </div>
     </li>
   );
 }
+
+
+export default cssModules(MenuSettings, styles);

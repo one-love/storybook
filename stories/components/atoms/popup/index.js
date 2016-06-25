@@ -1,11 +1,14 @@
 import React from 'react';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import cssModules from 'react-css-modules';
+import styles from './popup.scss';
+import './popup.gscss';
 
 
-export default function Popup(props) {
+function Popup(props) {
   let timeout = 300;
   let animationType = 'ease-out';
-  if (props && props.className.endsWith('__full')) {
+  if (props.className && props.className.endsWith('__full')) {
     timeout = 1000;
     animationType = 'ease-in-out';
   }
@@ -21,9 +24,9 @@ export default function Popup(props) {
       transitionEnterTimeout={timeout}
       transitionLeaveTimeout={timeout}
     >
-      <div className={props.className} style={style}>
-        <div className="disable">x</div>
-        <div className="items">
+      <div styleName={props.className} style={style}>
+        <div styleName="disable">x</div>
+        <div>
           {props.children}
         </div>
       </div>
@@ -36,3 +39,6 @@ Popup.propTypes = {
   children: React.PropTypes.node,
   className: React.PropTypes.string,
 };
+
+
+export default cssModules(Popup, styles);

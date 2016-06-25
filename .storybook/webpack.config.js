@@ -1,14 +1,24 @@
-const path = require('path');
-
 module.exports = {
   module: {
     loaders: [
       {
-        test: /\.scss$/,
+        test: /\.gscss$/,
         loaders: [
           'style?sourceMap',
           'css?sourceMap',
+          'resolve-url',
           'sass?sourceMap',
+          'sass-resources',
+        ],
+      },
+      {
+        test: /\.scss$/,
+        loaders: [
+          'style?sourceMap',
+          'css?sourceMap&modules&importLoaders=1&localIdentName=[path]___[name]__[local]',
+          'resolve-url',
+          'sass?sourceMap',
+          'sass-resources',
         ],
       },
       {
@@ -20,7 +30,7 @@ module.exports = {
       },
     ],
   },
-  sassLoader: {
-    includePaths: [path.resolve(__dirname, '../node_modules')],
-  },
+  sassResources: [
+    './stories/sass/vars.scss',
+  ],
 };

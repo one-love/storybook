@@ -1,36 +1,41 @@
 import React from 'react';
+import cssModules from 'react-css-modules';
+import styles from './login.scss';
 
 
-export default function Login() {
+function Login() {
   return (
-    <div className="login">
-      <div className="o-layout o-layout--center">
-        <h1>Login</h1>
+    <div styleName="login">
+      <div>
+        <h1 styleName="center">Login</h1>
       </div>
       <form role="form">
-        <div className="position--relative">
+        <div styleName="position--relative">
           <input
             name="email"
             type="input"
             id="email"
-            className="input"
+            styleName="input"
             autoFocus
             required
           />
-          <label className="label" htmlFor="email">Email</label>
+          <label styleName="label" htmlFor="email">Email</label>
         </div>
-        <div className="position--relative">
+        <div styleName="position--relative">
           <input
             type="password"
             name="password"
             id="password"
-            className="input"
+            styleName="input"
             required
           />
-          <label className="label" htmlFor="password">Password</label>
+          <label styleName="label" htmlFor="password">Password</label>
         </div>
-        <button className="button">Login</button>
+        <button styleName="button">Login</button>
       </form>
     </div>
   );
 }
+
+
+export default cssModules(Login, styles);

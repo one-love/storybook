@@ -1,13 +1,16 @@
 import React from 'react';
+import cssModules from 'react-css-modules';
+import styles from './forgot-password.scss';
 
-export default function ForgotPassword() {
+
+function ForgotPassword() {
   return (
-    <div className="forgot-password">
-      <div className="o-layout o-layout--center">
-        <h1>Forgot Password</h1>
+    <div styleName="forgot-password">
+      <div>
+        <h1 styleName="center">Forgot Password</h1>
       </div>
       <form role="form">
-        <div className="position--relative">
+        <div styleName="position--relative">
           <input
             name="email"
             type="input"
@@ -17,8 +20,11 @@ export default function ForgotPassword() {
           />
           <label htmlFor="email">Email</label>
         </div>
-        <button className="button">Send</button>
+        <button styleName="button">Send</button>
       </form>
     </div>
   );
 }
+
+
+export default cssModules(ForgotPassword, styles);
