@@ -7,8 +7,12 @@ import MenuSettings from './menu-settings';
 import Spinner from './spinner.js';
 import Log from './log.js';
 import Popup from './popup.js';
+import Add from './add.js';
 
 storiesOf('Atoms', module)
+  .add('add', () => (
+    <Add />
+  ))
   .add('footer', () => (
     <Footer />
   ))

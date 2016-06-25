@@ -1,6 +1,7 @@
 import React from 'react';
 import Service from '../molecules/service';
 import Layout from '../layouts/layout';
+import Add from '../atoms/add';
 
 
 export default function ServiceList() {
@@ -9,6 +10,7 @@ export default function ServiceList() {
       <Service name="One Love" />
       <Service name="Liberator" />
       <Service name="Compose" />
+      <Add />
     </Layout>
   );
 }
