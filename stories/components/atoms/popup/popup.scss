@@ -9,7 +9,7 @@
   right: 0;
   color: $settings_color;
   width: $settings_width;
-  padding: 10px;
+  padding: $popup_padding;
   overflow: auto;
 
   .disable {
@@ -20,13 +20,5 @@
 
 .popup__full {
   @extend .popup;
-  width: 100%;
-}
-
-
-.popup-appear {
-  width: 0;
-  overflow: hidden;
-  padding: 0;
-  border-style: none;
+  width: calc(100vw - #{$popup_padding} * 2);
 }

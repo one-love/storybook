@@ -1,17 +1,23 @@
 import React from 'react';
+import cssModules from 'react-css-modules';
 import Layout from '../../layouts/layout';
+import styles from './application.scss';
 
-export default function Cluster() {
+
+function Application() {
   return (
     <Layout title="Application" service="active">
       <div>
-        <div className="label">name:</div>
-        <div className="item">common</div>
+        <div styleName="label">name:</div>
+        <div styleName="item">common</div>
       </div>
       <div>
-        <div className="label">galaxy role:</div>
-        <div className="item">onelove-roles.common</div>
+        <div styleName="label">galaxy role:</div>
+        <div styleName="item">onelove-roles.common</div>
       </div>
     </Layout>
   );
 }
+
+
+export default cssModules(Application, styles);

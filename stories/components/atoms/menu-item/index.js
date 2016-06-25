@@ -1,14 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router';
+import cssModules from 'react-css-modules';
+import styles from './menu-item.scss';
 
 
-export default function MenuItem(props) {
-  let className = 'item';
+function MenuItem(props) {
+  let styleName = 'item';
   if (props && props.active === 'yes') {
-    className += '-active';
+    styleName += '-active';
   }
   return (
-    <li className={className}>
+    <li styleName={styleName}>
       <Link to={props.link ? props.link : ''}>{props.name ? props.name : 'Item'}</Link>
     </li>
   );
@@ -20,3 +22,6 @@ MenuItem.propTypes = {
   link: React.PropTypes.string,
   name: React.PropTypes.string,
 };
+
+
+export default cssModules(MenuItem, styles);

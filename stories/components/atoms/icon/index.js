@@ -1,20 +1,22 @@
 import React from 'react';
+import cssModules from 'react-css-modules';
+import styles from './icon.scss';
 
 
-export default function Icon(props) {
+function Icon(props) {
   let name = 'IconName';
   if (props && props.name) {
     name = props.name;
   }
   return (
-    <div className="o-media icon">
-      <div className="icon-close">x</div>
+    <div styleName="icon">
+      <div styleName="icon-close">x</div>
       <img
         src={props.img}
         alt={props.alt ? props.alt : 'icon'}
-        className="o-media__img icon-img"
+        styleName="icon-img"
       />
-      <div className="o-media__body">
+      <div>
         {name}
       </div>
     </div>
@@ -27,3 +29,6 @@ Icon.propTypes = {
   name: React.PropTypes.string,
   img: React.PropTypes.string,
 };
+
+
+export default cssModules(Icon, styles);

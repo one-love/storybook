@@ -1,10 +1,12 @@
 import React from 'react';
+import cssModules from 'react-css-modules';
 import Header from '../../molecules/header';
 import Footer from '../../atoms/footer';
 import Popup from '../../atoms/popup';
+import styles from './profile.scss';
 
 
-export default function Profile(props) {
+function Profile(props) {
   return (
     <div>
       <Popup className="popup__full">
@@ -13,8 +15,12 @@ export default function Profile(props) {
         <div>first name: John</div>
         <div>last name: Do'h</div>
       </Popup>
-      <Header cluster={props.cluster} service={props.service} provision={props.provision} />
-      <div className="content">
+      <Header
+        cluster={props.cluster}
+        service={props.service}
+        provision={props.provision}
+      />
+      <div styleName="content">
         <h1>{props.title ? props.title : 'Title'}</h1>
         {props.children}
       </div>
@@ -31,3 +37,6 @@ Profile.propTypes = {
   provision: React.PropTypes.string,
   title: React.PropTypes.string,
 };
+
+
+export default cssModules(Profile, styles);

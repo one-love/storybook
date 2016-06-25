@@ -29,10 +29,10 @@ storiesOf('Atoms', module)
   .add('menu-settings', () => (
     <MenuSettings />
   ))
-  .add('spinner', () => (
-    <Spinner />
-  ))
   .add('popup', () => (
     <Popup />
+  ))
+  .add('spinner', () => (
+    <Spinner />
   ))
 ;

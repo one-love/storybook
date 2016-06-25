@@ -1,24 +1,26 @@
 import React from 'react';
+import cssModules from 'react-css-modules';
+import styles from './service.scss';
 import Layout from '../../layouts/layout';
 
 
-export default function Service() {
+function Service() {
   return (
     <Layout title="Service" service="active">
-      <div className="item">
+      <div styleName="item">
         <div>
-          <div className="label">
+          <div styleName="label">
             user:
           </div>
-          <div className="item">
+          <div styleName="item">
             admin@example.com
           </div>
         </div>
         <div>
-          <div className="label">
+          <div styleName="label">
             roles:
           </div>
-          <div className="item">
+          <div styleName="item">
             <select>
               <option value="some">op čop</option>
               <option value="thing">antilop</option>
@@ -29,3 +31,6 @@ export default function Service() {
     </Layout>
   );
 }
+
+
+export default cssModules(Service, styles);
