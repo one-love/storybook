@@ -9,7 +9,7 @@ export default function Host(props) {
     name = props.name;
   }
   return (
-    <Icon alt="cluster" img={svg} name={name} />
+    <Icon alt="host" img={svg} name={name} />
   );
 }
 

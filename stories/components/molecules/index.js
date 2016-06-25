@@ -5,9 +5,13 @@ import Header from './header';
 import Host from './host';
 import Provision from './provision';
 import Service from './service';
+import Application from './application';
 
 
 storiesOf('Molecules', module)
+  .add('application', () => (
+    <Application />
+  ))
   .add('cluster', () => (
     <Cluster />
   ))
