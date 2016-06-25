@@ -7,14 +7,3 @@
   margin-right: 5px;
   height: calc(100% - 9px);
 }
-
-.notification {
-  position: absolute;
-  right: 10px;
-  top: 25px;
-  height: 10px;
-  width: 10px;
-  color: $notification_background_color;
-  background-color: $notification_background_color;
-  border-radius: 10px;
-}
