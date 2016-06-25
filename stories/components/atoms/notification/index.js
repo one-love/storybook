@@ -10,6 +10,7 @@ function Notification(props) {
   };
   return (
     <div style={style} styleName="notification">
+      <span styleName="notification_indicator"></span>
       Notification and <a href="">link</a>
     </div>
   );
