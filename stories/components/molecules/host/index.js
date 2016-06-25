@@ -1,15 +1,19 @@
 import React from 'react';
-import { Link } from 'react-router';
+import svg from './host.svg';
+import Icon from '../../atoms/icon';
 
-export default () => (
-  <div>
-    <h2>Host: Tilda Center</h2>
-    <h2>IP:  127.0.0.1</h2>
-    <Link to={'/#/'}>
-      Edit
-    </Link>
-    <Link to={'/#/'}>
-      Remove
-    </Link>
-  </div>
-);
+
+export default function Host(props) {
+  let name = 'HostName';
+  if (props && props.name) {
+    name = props.name;
+  }
+  return (
+    <Icon alt="cluster" img={svg} name={name} />
+  );
+}
+
+
+Host.propTypes = {
+  name: React.PropTypes.string,
+};

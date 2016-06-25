@@ -1,5 +1,5 @@
 import React from 'react';
-import cloud from './cloud.svg';
+import svg from './cloud.svg';
 import Icon from '../../atoms/icon';
 
 
@@ -9,7 +9,7 @@ export default function Cluster(props) {
     name = props.name;
   }
   return (
-    <Icon alt="cluster" img={cloud} name={name} />
+    <Icon alt="cluster" img={svg} name={name} />
   );
 }
 
