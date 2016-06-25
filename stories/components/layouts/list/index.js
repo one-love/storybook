@@ -2,7 +2,7 @@ import React from 'react';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import Layout from '../../layouts/layout';
 import Add from '../../atoms/add';
-import './list.gscss';
+import './list.scss';
 
 
 export default function List(props) {

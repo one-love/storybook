@@ -2,16 +2,6 @@ module.exports = {
   module: {
     loaders: [
       {
-        test: /\.gscss$/,
-        loaders: [
-          'style?sourceMap',
-          'css?sourceMap',
-          'resolve-url',
-          'sass?sourceMap',
-          'sass-resources',
-        ],
-      },
-      {
         test: /\.scss$/,
         loaders: [
           'style?sourceMap',

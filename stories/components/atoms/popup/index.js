@@ -2,7 +2,6 @@ import React from 'react';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import cssModules from 'react-css-modules';
 import styles from './popup.scss';
-import './popup.gscss';
 
 
 function Popup(props) {

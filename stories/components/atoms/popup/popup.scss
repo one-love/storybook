@@ -22,3 +22,10 @@
   @extend .popup;
   width: calc(100vw - #{$popup_padding} * 2);
 }
+
+:global .popup-appear {
+  width: 0;
+  overflow: hidden;
+  padding: 0;
+  border-style: none;
+}
