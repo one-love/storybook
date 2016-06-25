@@ -362,7 +362,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="7.9999999"
-     inkscape:cx="7.0354267"
+     inkscape:cx="-13.964574"
      inkscape:cy="9.9217158"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -428,20 +428,11 @@
        rx="1.9999999"
        ry="2" />
     <path
-       style="fill:url(#linearGradient2292);fill-opacity:1;stroke:#4b4b4b;stroke-width:1.00000048;stroke-miterlimit:4;stroke-opacity:1"
+       style="fill:url(#linearGradient2292);fill-opacity:1;stroke:#8c8c8c;stroke-width:1.00000047999999997;stroke-miterlimit:4;stroke-opacity:1"
        d="m 3.630204,14.027912 0,-4.4863223 c 0,-1.4080405 1.1102103,-2.5415895 2.489261,-2.5415895 l 36.094285,0 c 1.37905,0 2.489261,1.133549 2.489261,2.5415895 l 0,4.4863223"
        id="path1917"
        sodipodi:nodetypes="cccccc"
        inkscape:connector-curvature="0" />
-    <rect
-       style="opacity:0.8;fill:none;stroke:url(#linearGradient2289);stroke-width:1.00000095;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       id="rect1919"
-       width="39.076817"
-       height="34.969814"
-       x="4.6267591"
-       y="8.0096912"
-       rx="1.5110159"
-       ry="1.5110158" />
     <g
        style="display:inline"
        inkscape:label="Base"
