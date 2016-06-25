@@ -11,24 +11,11 @@ function Login() {
       </div>
       <form role="form">
         <div styleName="position--relative">
-          <input
-            name="email"
-            type="input"
-            id="email"
-            styleName="input"
-            autoFocus
-            required
-          />
+          <input name="email" type="input" id="email" styleName="input" autoFocus required />
           <label styleName="label" htmlFor="email">Email</label>
         </div>
         <div styleName="position--relative">
-          <input
-            type="password"
-            name="password"
-            id="password"
-            styleName="input"
-            required
-          />
+          <input type="password" name="password" id="password" styleName="input" required />
           <label styleName="label" htmlFor="password">Password</label>
         </div>
         <button styleName="button">Login</button>

@@ -15,40 +15,16 @@ import ApplicationList from './application-list';
 
 
 storiesOf('Pages', module)
-  .add('login', () => (
-    <Login />
-  ))
-  .add('forgot-password', () => (
-    <ForgotPassword />
-  ))
-  .add('cluster', () => (
-    <Cluster />
-  ))
-  .add('cluster-list', () => (
-    <ClusterList />
-  ))
-  .add('service', () => (
-    <Service />
-  ))
-  .add('service-list', () => (
-    <ServiceList />
-  ))
-  .add('provision', () => (
-    <Provision />
-  ))
-  .add('provision-list', () => (
-    <ProvisionList />
-  ))
-  .add('host', () => (
-    <Host />
-  ))
-  .add('host-list', () => (
-    <HostList />
-  ))
-  .add('application', () => (
-    <Application />
-  ))
-  .add('application-list', () => (
-    <ApplicationList />
-  ))
+  .add('application', () => (<Application />))
+  .add('application-list', () => (<ApplicationList />))
+  .add('cluster', () => (<Cluster />))
+  .add('cluster-list', () => (<ClusterList />))
+  .add('forgot-password', () => (<ForgotPassword />))
+  .add('host', () => (<Host />))
+  .add('host-list', () => (<HostList />))
+  .add('login', () => (<Login />))
+  .add('provision', () => (<Provision />))
+  .add('provision-list', () => (<ProvisionList />))
+  .add('service', () => (<Service />))
+  .add('service-list', () => (<ServiceList />))
 ;

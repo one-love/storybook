@@ -9,21 +9,10 @@ import Application from './application';
 
 
 storiesOf('Molecules', module)
-  .add('application', () => (
-    <Application />
-  ))
-  .add('cluster', () => (
-    <Cluster />
-  ))
-  .add('header', () => (
-    <Header />
-  ))
-  .add('provision', () => (
-    <Provision />
-  ))
-  .add('service', () => (
-    <Service />
-  ))
-  .add('host', () => (
-    <Host />
-  ));
+  .add('application', () => (<Application />))
+  .add('cluster', () => (<Cluster />))
+  .add('header', () => (<Header />))
+  .add('host', () => (<Host />))
+  .add('provision', () => (<Provision />))
+  .add('service', () => (<Service />))
+;

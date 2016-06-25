@@ -9,11 +9,9 @@ function Notification(props) {
     transition: `top ${transitionTime}s ease-out`,
   };
   return (
-    <div>
+    <div style={style} styleName="notification">
       <span styleName="notification_indicator"></span>
-      <div style={style} styleName="notification">
-        Notification and <a href="">link</a>
-      </div>
+      Notification and <a href="">link</a>
     </div>
   );
 }

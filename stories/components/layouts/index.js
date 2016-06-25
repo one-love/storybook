@@ -6,16 +6,8 @@ import Profile from './profile';
 import Notification from './notification';
 
 storiesOf('Layouts', module)
-  .add('layout', () => (
-    <Layout />
-  ))
-  .add('settings', () => (
-    <Settings />
-  ))
-  .add('profile', () => (
-    <Profile />
-  ))
-  .add('notification', () => (
-    <Notification />
-  ))
+  .add('layout', () => (<Layout />))
+  .add('notification', () => (<Notification />))
+  .add('profile', () => (<Profile />))
+  .add('settings', () => (<Settings />))
 ;

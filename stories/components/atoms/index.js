@@ -12,31 +12,13 @@ import Notification from './notification';
 
 
 storiesOf('Atoms', module)
-  .add('add', () => (
-    <Add />
-  ))
-  .add('footer', () => (
-    <Footer />
-  ))
-  .add('icon', () => (
-    <Icon />
-  ))
-  .add('log', () => (
-    <Log />
-  ))
-  .add('menu-item', () => (
-    <MenuItem />
-  ))
-  .add('menu-settings', () => (
-    <MenuSettings />
-  ))
-  .add('popup', () => (
-    <Popup />
-  ))
-  .add('spinner', () => (
-    <Spinner />
-  ))
-  .add('notification', () => (
-    <Notification />
-  ))
+  .add('add', () => (<Add />))
+  .add('footer', () => (<Footer />))
+  .add('icon', () => (<Icon />))
+  .add('log', () => (<Log />))
+  .add('menu-item', () => (<MenuItem />))
+  .add('menu-settings', () => (<MenuSettings />))
+  .add('notification', () => (<Notification />))
+  .add('popup', () => (<Popup />))
+  .add('spinner', () => (<Spinner />))
 ;
