@@ -5,6 +5,7 @@ import ClusterList from './cluster-list';
 import Service from './service';
 import ServiceList from './service-list';
 import Provision from './provision';
+import ProvisionList from './provision-list';
 import Login from './login';
 import ForgotPassword from './forgot-password';
 
@@ -30,5 +31,8 @@ storiesOf('Pages', module)
   ))
   .add('provision', () => (
     <Provision />
+  ))
+  .add('provision-list', () => (
+    <ProvisionList />
   ))
 ;
