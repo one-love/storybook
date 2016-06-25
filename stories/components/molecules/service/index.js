@@ -1,6 +1,6 @@
 import React from 'react';
-import service from '../../../media/img/service.svg';
-import Icon from '../atoms/icon';
+import service from './service.svg';
+import Icon from '../../atoms/icon';
 
 
 export default function Service(props) {

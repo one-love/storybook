@@ -1,5 +1,5 @@
 import React from 'react';
-import gear from '../../../media/img/gear.svg';
+import gear from './gear.svg';
 
 
 export default function MenuSettings() {

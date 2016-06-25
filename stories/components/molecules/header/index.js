@@ -1,6 +1,6 @@
 import React from 'react';
-import MenuItem from '../atoms/menu-item';
-import MenuSettings from '../atoms/menu-settings';
+import MenuItem from '../../atoms/menu-item';
+import MenuSettings from '../../atoms/menu-settings';
 
 
 export default function Header(props) {

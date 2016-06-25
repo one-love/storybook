@@ -4,10 +4,11 @@ import Footer from './footer';
 import Icon from './icon';
 import MenuItem from './menu-item';
 import MenuSettings from './menu-settings';
-import Spinner from './spinner.js';
-import Log from './log.js';
-import Popup from './popup.js';
-import Add from './add.js';
+import Spinner from './spinner';
+import Log from './log';
+import Popup from './popup';
+import Add from './add';
+
 
 storiesOf('Atoms', module)
   .add('add', () => (

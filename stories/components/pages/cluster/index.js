@@ -1,5 +1,5 @@
 import React from 'react';
-import Layout from '../layouts/layout';
+import Layout from '../../layouts/layout';
 
 export default function Cluster() {
   return (
