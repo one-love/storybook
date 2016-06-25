@@ -8,6 +8,8 @@ import Provision from './provision';
 import ProvisionList from './provision-list';
 import Login from './login';
 import ForgotPassword from './forgot-password';
+import Host from './host';
+import HostList from './host-list';
 
 
 storiesOf('Pages', module)
@@ -34,5 +36,11 @@ storiesOf('Pages', module)
   ))
   .add('provision-list', () => (
     <ProvisionList />
+  ))
+  .add('host', () => (
+    <Host />
+  ))
+  .add('host-list', () => (
+    <HostList />
   ))
 ;
