@@ -10,6 +10,8 @@ import Login from './login';
 import ForgotPassword from './forgot-password';
 import Host from './host';
 import HostList from './host-list';
+import Application from './application';
+import ApplicationList from './application-list';
 
 
 storiesOf('Pages', module)
@@ -42,5 +44,11 @@ storiesOf('Pages', module)
   ))
   .add('host-list', () => (
     <HostList />
+  ))
+  .add('application', () => (
+    <Application />
+  ))
+  .add('application-list', () => (
+    <ApplicationList />
   ))
 ;
